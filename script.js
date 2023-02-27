@@ -44,6 +44,10 @@ function remplir(caseX) {
         alert("Il y a un gagnant! Congratulations!");
         restart();
     }
+    
+	if (verify() == false && full()) {
+			alert("Match nul!");
+	}
 }
 
 function verify() {
@@ -75,4 +79,13 @@ function restart() {
     case7.textContent = "";
     case8.textContent = "";
     case9.textContent = "";
+}
+
+function full() {
+	if (case1.textContent != "" && case2.textContent != "" && case3.textContent != "" && case4.textContent != "" && case5.textContent != "" && case6.textContent != "" && case7.textContent != "" && case8.textContent != "" && case9.textContent != "") {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
