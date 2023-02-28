@@ -46,7 +46,8 @@ function remplir(caseX) {
     }
     
 	if (verify() == false && full()) {
-			alert("Match nul!");
+		alert("Match nul!");
+		restart();
 	}
 }
 
