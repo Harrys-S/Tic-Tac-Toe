@@ -61,7 +61,6 @@ function verify() {
 function restart() {
     for (let i = 1; i < 10; i += 1) {
         let x = "case" + i;
-        console.log(("case" + i).textContent);
         window[x].textContent = "";
     }
 }
